@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>RY Homes — Bay Area Leasing &amp; Property Management | Ryan Yan</title>
+<meta name="description" content="Ryan Yan leases and manages Bay Area homes. Featured homes leased in 7 days on average, fastest on record 2 days. Free rental analysis. English and 中文.">
+<meta name="theme-color" content="#141A22">
+<meta property="og:title" content="RY Homes — Lease your home in days, not months">
+<meta property="og:description" content="Free rental analysis from Ryan Yan. Featured homes leased in 7 days on average.">
+<meta property="og:type" content="website">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Geist:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D98A1F'/%3E%3Ctext x='32' y='41' font-family='Helvetica,Arial,sans-serif' font-size='24' font-weight='700' fill='%231A120A' text-anchor='middle'%3ERY%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main"><span class="en">Skip to content</span><span class="zh">跳到主要内容</span></a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html" data-keep-lang>
+      <span class="mono" aria-hidden="true">RY</span>
+      <span><b>RY Homes</b><small><span class="en">Leasing &amp; Property Management</span><span class="zh">出租与物业管理</span></small></span>
+    </a>
+    <div class="navr">
+      <nav class="seg" aria-label="Choose audience">
+        <a href="index.html" aria-current="page" data-keep-lang><span class="en">I own a home</span><span class="zh">我是屋主</span></a>
+        <a href="renters/index.html" data-keep-lang><span class="en">Looking to rent</span><span class="zh">我要租房</span></a>
+      </nav>
+      <div class="seg lang" role="group" aria-label="Language">
+        <button type="button" id="lang-en" aria-pressed="true">EN</button>
+        <button type="button" id="lang-zh" aria-pressed="false">中文</button>
+      </div>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<nav class="sheet" id="sheet" aria-label="Menu">
+  <a href="index.html" data-keep-lang><span class="en">I own a home</span><span class="zh">我是屋主</span></a>
+  <a href="renters/index.html" data-keep-lang><span class="en">I'm looking to rent</span><span class="zh">我要租房</span></a>
+  <a href="#results"><span class="en">Recently leased</span><span class="zh">近期成交</span></a>
+  <a href="#contact"><span class="en">Free rental analysis</span><span class="zh">免费出租评估</span></a>
+</nav>
+
+<main id="main">
+<section class="hero">
+  <div class="bgw"><img src="img/owner-hero.jpg" alt="" aria-hidden="true" width="1536" height="1024" onerror="this.remove()"></div>
+  <div class="wrap">
+    <p class="lbl"><i aria-hidden="true"></i><span class="en">Now accepting homes for 2026</span><span class="zh">2026 年房源现正受理</span></p>
+    <h1 class="d1"><span class="en">Lease your home in <span class="hl">days</span>, not months.</span><span class="zh">您的房子<span class="hl">几天</span>租出，<br>不用再等几个月。</span></h1>
+    <p class="lede"><span class="en">I'm Ryan Yan. I price, market and lease Bay Area homes — and screen the tenant who moves in. Featured homes leased in 7 days on average.</span><span class="zh">我是 Ryan Yan（言）。从定价、推广到签约，我帮湾区屋主把房子租出去，并严格筛选入住租客。精选案例平均 7 天租出。</span></p>
+    <div class="acts">
+      <a class="btn pri ar" href="#contact"><span class="en">Get my free rental analysis</span><span class="zh">获取免费出租评估</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      <a class="btn glass" href="#results"><span class="en">See recent results</span><span class="zh">查看近期成交</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="barwrap">
+  <div class="wrap">
+    <form class="leadbar" id="quick-form" novalidate>
+      <div class="cell">
+        <label for="q-name"><span class="en">Your name</span><span class="zh">您的姓名</span></label>
+        <input id="q-name" type="text" autocomplete="name" placeholder="Jenny Chen" data-ph-en="Jenny Chen" data-ph-zh="例如：陈小姐">
+      </div>
+      <div class="cell">
+        <label for="q-phone"><span class="en">Mobile phone</span><span class="zh">手机号码</span></label>
+        <input id="q-phone" type="tel" autocomplete="tel" placeholder="408-555-1234" data-ph-en="408-555-1234" data-ph-zh="408-555-1234">
+      </div>
+      <div class="cell">
+        <label for="q-city"><span class="en">Property city</span><span class="zh">房屋所在城市</span></label>
+        <input id="q-city" type="text" placeholder="San Jose, CA" data-ph-en="San Jose, CA" data-ph-zh="例如：San Jose, CA">
+      </div>
+      <div class="go">
+        <button class="btn pri ar" type="submit"><span class="en">Free analysis</span><span class="zh">免费评估</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </div>
+      <p class="err" id="q-err" hidden></p>
+    </form>
+    <p class="barnote"><span class="en">Three fields to start. Private, no obligation — I reply within 24 hours.</span><span class="zh">只需三项信息即可开始。信息保密 · 无需任何承诺 · 24 小时内回复。</span></p>
+  </div>
+</section>
+
+<section class="field sec" style="margin-top:clamp(70px,8vw,120px)">
+  <div class="wrap">
+    <div class="rv">
+      <p class="lbl on"><span class="en">The unit that matters</span><span class="zh">真正该看的单位</span></p>
+      <h2 class="d2" style="margin-top:18px"><span class="en">Every advantage I have is measured in <span style="color:var(--acc-lit)">days</span>.</span><span class="zh">我能给您的每一点优势，<br>都可以用<span style="color:var(--acc-lit)">「天」</span>来衡量。</span></h2>
+      <p class="lede" style="margin-top:20px"><span class="en">Not slogans. Days on the market, days to a signed lease, hours to a reply — and the rent an empty home costs you every single day.</span><span class="zh">不是口号。挂牌多少天、签约多少天、多少小时回复，以及空置的房子每一天在亏多少租金。</span></p>
+    </div>
+    <div class="figs rv">
+      <div class="fig"><b class="num" data-count="7">7</b><span class="u"><span class="en">days</span><span class="zh">天</span></span><span class="t"><span class="en">Average time to lease across featured homes</span><span class="zh">精选案例平均出租时间</span></span></div>
+      <div class="fig"><b class="num" data-count="2">2</b><span class="u"><span class="en">days</span><span class="zh">天</span></span><span class="t"><span class="en">Fastest lease on record, reported by the owner</span><span class="zh">最快出租纪录（屋主反馈）</span></span></div>
+      <div class="fig"><b class="num" data-count="24">24</b><span class="u"><span class="en">hours</span><span class="zh">小时</span></span><span class="t"><span class="en">Every enquiry gets a reply within one day</span><span class="zh">每个咨询一天内回复</span></span></div>
+      <div class="fig"><b class="num" data-count="0">0</b><span class="u"><span class="en">upfront</span><span class="zh">前期费用</span></span><span class="t"><span class="en">No fee until your home is leased</span><span class="zh">房子租出去之前不收费</span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="lbl"><span class="en">Why owners call me</span><span class="zh">屋主为什么找我</span></p>
+      <h2 class="d2"><span class="en">The four things that <span class="hl">actually</span> cost you money.</span><span class="zh">真正<span class="hl">让您亏钱</span>的四件事。</span></h2>
+      <p class="lede"><span class="en">Not paint colour. Not photos. These four — and each one has a fix.</span><span class="zh">不是墙的颜色，也不是照片好不好看。是下面这四件事，每一件都有解法。</span></p>
+    </div>
+    <div class="grid">
+      <div class="g7 rv"><div class="card pain">
+        <p class="q"><span class="en">My home has been empty for weeks and it's costing me every single week.</span><span class="zh">房子已经空了好几周，每周都在亏钱。</span></p>
+        <div class="fx"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></i><p><b><span class="en">Priced to the street, not to a website</span><span class="zh">按真实街区定价，不看网站估值</span></b><span><span class="en">I pull the homes that actually leased near you in the last 90 days, then price to lease — not to sit. Featured homes leased in 7 days on average.</span><span class="zh">我调取您附近 90 天内真正成交的租约来定价，目标是租出去，不是挂着好看。精选案例平均 7 天租出。</span></span></p></div>
+      </div></div>
+      <div class="g5 rv"><div class="card pain">
+        <p class="q"><span class="en">I'm scared of getting the wrong tenant.</span><span class="zh">最怕遇到不对的租客。</span></p>
+        <div class="fx"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></i><p><b><span class="en">Every applicant verified before you see them</span><span class="zh">每位申请人先核实，再呈给您</span></b><span><span class="en">Credit, income, employment, rental history and prior-eviction check — the same written standard for every applicant, under Fair Housing rules.</span><span class="zh">信用、收入、在职、租房记录、驱逐记录逐项核实；所有申请人用同一套书面标准，符合公平住房法规。</span></span></p></div>
+      </div></div>
+      <div class="g5 rv"><div class="card pain">
+        <p class="q"><span class="en">The big management company never picks up.</span><span class="zh">大公司永远找不到人。</span></p>
+        <div class="fx"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></i><p><b><span class="en">You have my mobile, not a ticket number</span><span class="zh">您有我的手机号，不是一个工单号</span></b><span><span class="en">One person handles your home from listing to lease signing — the same person who answers the phone.</span><span class="zh">从挂牌到签约，全程由我一人负责，接电话的也是我。</span></span></p></div>
+      </div></div>
+      <div class="g7 rv"><div class="card pain">
+        <p class="q"><span class="en">My tenants speak Mandarin and I don't. Everything gets lost in translation.</span><span class="zh">租客说中文、我说英文，很多事情沟通不清。</span></p>
+        <div class="fx"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></i><p><b><span class="en">Showings, screening and lease talks in both languages</span><span class="zh">看房、审核、签约全程中英双语</span></b><span><span class="en">Listing copy, showings, the application walk-through and move-in explanations all run in English and 中文, so nothing is assumed.</span><span class="zh">房源文案、带看、申请讲解、入住说明都提供中英双语，不靠猜。</span></span></p></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="cost">
+  <div class="wrap">
+    <div class="hd mid rv">
+      <p class="lbl"><span class="en">Day counter</span><span class="zh">天数计算器</span></p>
+      <h2 class="d2"><span class="en">Count the <span class="hl">days</span>. That's the real price.</span><span class="zh">数一数<span class="hl">天数</span>，那才是真实代价。</span></h2>
+      <p class="lede"><span class="en">Every square below is one empty day. Drag the slider and watch what an empty home actually costs.</span><span class="zh">下面每一个小方块代表空置一天。拖动滑块，看看空着的房子到底在亏多少。</span></p>
+    </div>
+    <div class="calc rv">
+      <div class="calcin">
+        <div class="fld">
+          <label for="vc-rent"><span><span class="en">Your monthly rent</span><span class="zh">月租金</span></span></label>
+          <div class="money"><span aria-hidden="true">$</span><input id="vc-rent" type="text" inputmode="numeric" value="5,500" aria-label="Monthly rent in US dollars"></div>
+          <p class="hint"><span class="en">Not sure? Ask me for a free rent range for your address.</span><span class="zh">不确定？可以免费问我您地址的租金区间。</span></p>
+        </div>
+        <div class="fld">
+          <label for="vc-weeks"><span><span class="en">Weeks empty</span><span class="zh">空置周数</span></span><output id="vc-weeks-out" for="vc-weeks">4</output></label>
+          <input id="vc-weeks" type="range" min="1" max="26" step="1" value="4" aria-label="Weeks empty">
+          <p class="hint"><span class="en">A home that lingers on the market usually sits 6–12 weeks.</span><span class="zh">挂久了的房子通常会空置 6–12 周。</span></p>
+        </div>
+      </div>
+      <div class="days">
+        <div class="dh">
+          <span class="k"><span class="en">One square = one empty day</span><span class="zh">一个方块 = 空置一天</span></span>
+          <span class="c num" id="vc-days">28 <span class="en">days</span><span class="zh">天</span></span>
+        </div>
+        <div class="daygrid" id="daygrid" aria-hidden="true"></div>
+      </div>
+      <div class="tally">
+        <div><span class="k"><span class="en">Per day</span><span class="zh">每天</span></span><b class="num" id="vc-day">$181</b></div>
+        <div><span class="k"><span class="en">Per week</span><span class="zh">每周</span></span><b class="num" id="vc-week">$1,269</b></div>
+        <div class="peak"><span class="k"><span class="en">Rent you lose</span><span class="zh">损失的租金</span></span><b class="num" id="vc-total">$5,077</b></div>
+        <div><span class="k"><span class="en">A full year of rent</span><span class="zh">全年租金</span></span><b class="num" id="vc-year">$66,000</b></div>
+      </div>
+      <p class="calcnote"><span class="en">Illustration only, based on the numbers you entered. Leasing time depends on the market, the price and the condition of each home.</span><span class="zh">仅为示意，基于您输入的数字。实际出租时间取决于市场、定价和房屋状况。</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="lbl"><span class="en">What you get</span><span class="zh">服务内容</span></p>
+      <h2 class="d2"><span class="en">Eight things done properly, <span class="hl">every time</span>.</span><span class="zh">八件事，<span class="hl">每次都做到位</span>。</span></h2>
+      <p class="lede"><span class="en">The full checklist I run on every home — not a menu where the useful parts cost extra.</span><span class="zh">这是我每套房子都会走完的完整清单，不是把有用的部分单独加价的菜单。</span></p>
+    </div>
+    <div class="grid">
+      <div class="g6 r2 rv"><div class="card reason lead">
+        <div><p class="n">01</p><p class="big num">7<em><span class="en">days</span><span class="zh">天</span></em></p></div>
+        <div>
+          <h3><span class="en">Priced to lease, from real closed rents</span><span class="zh">参考真实成交租金定价</span></h3>
+          <p><span class="en">Featured homes leased in 7 days on average. On a $5,500 home, every empty week costs about $1,270 — so pricing is the whole game.</span><span class="zh">精选案例平均 7 天租出。以月租 $5,500 计算，每空置一周约损失 $1,270，所以定价是关键。</span></p>
+        </div>
+      </div></div>
+      <div class="g3 rv"><div class="card reason"><p class="n">02</p><h3><span class="en">Photos and copy that get the click</span><span class="zh">能带来点击的照片与文案</span></h3><p><span class="en">Daylight photos, a floor plan when one exists, and a description written for the renter searching your street.</span><span class="zh">白天自然光拍摄、如有户型图一并提供，文案针对真正在搜索您这条街的租客来写。</span></p></div></div>
+      <div class="g3 rv"><div class="card reason"><p class="n">03</p><h3><span class="en">Listed where renters look</span><span class="zh">发布到租客真正会看的地方</span></h3><p><span class="en">Zillow and the major rental sites, plus my own Chinese-speaking renter network in the South Bay and Peninsula.</span><span class="zh">Zillow 等主要租房平台，加上我在南湾和半岛的华人租客资源。</span></p></div></div>
+      <div class="g3 rv"><div class="card reason"><p class="n">04</p><h3><span class="en">Showings I run myself</span><span class="zh">带看由我本人负责</span></h3><p><span class="en">Private and group showings, evenings and weekends included. I meet the people who want to live in your home.</span><span class="zh">单独带看与集中开放，晚间和周末都安排。想住进您房子的人，我都会亲自见。</span></p></div></div>
+      <div class="g3 rv"><div class="card reason"><p class="n">05</p><h3><span class="en">Written screening standard</span><span class="zh">书面审核标准</span></h3><p><span class="en">Credit, income, employment, rental history, prior evictions. Same standard for everyone, documented, Fair Housing compliant.</span><span class="zh">信用、收入、在职、租房记录、驱逐记录。所有人同一标准、全部留档，符合公平住房法规。</span></p></div></div>
+      <div class="g4 rv"><div class="card reason"><p class="n">06</p><h3><span class="en">California lease, done right</span><span class="zh">加州规范租约</span></h3><p><span class="en">Current California lease and the required disclosures, explained to the tenant in their language before they sign.</span><span class="zh">使用最新加州租约及法定披露文件，签约前用租客的语言逐条讲清。</span></p></div></div>
+      <div class="g4 rv"><div class="card reason"><p class="n">07</p><h3><span class="en">Move-in condition on record</span><span class="zh">入住状况完整留档</span></h3><p><span class="en">A dated photo record of the home at move-in, so the deposit conversation at move-out is about facts.</span><span class="zh">入住时拍摄带日期的房屋状况记录，退租时押金问题有据可依。</span></p></div></div>
+      <div class="g4 rv"><div class="card reason"><p class="n">08</p><h3><span class="en">Rent reminders &amp; repair coordination</span><span class="zh">收租提醒与维修协调</span></h3><p><span class="en">On the management plan: rent follow-up, vendor coordination, and you approve anything above the limit you set.</span><span class="zh">管理方案包含：租金跟催、维修厂商协调；超过您设定金额的支出，必须您批准。</span></p></div></div>
+    </div>
+
+    <div class="cmpw rv" style="margin-top:26px">
+      <div class="cmph">
+        <h3 class="d3"><span class="en">Three ways to lease your home</span><span class="zh">出租房子的三种方式</span></h3>
+        <p style="color:var(--fg-2);margin-top:8px;font-size:.96rem"><span class="en">What each one actually gives you.</span><span class="zh">各自实际能给您什么。</span></p>
+      </div>
+      <table class="cmp">
+        <thead><tr><th scope="col"><span class="en">&nbsp;</span></th><th scope="col"><span class="en">Do it yourself</span><span class="zh">自己出租</span></th><th scope="col"><span class="en">Large management firm</span><span class="zh">大型管理公司</span></th><th scope="col" class="us hi">RY Homes</th></tr></thead>
+        <tbody>
+          <tr><td><span class="en">Pricing</span><span class="zh">定价</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">Guess from asking prices online</span><span class="zh">照网上挂牌价猜</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">Generic market report</span><span class="zh">通用市场报告</span></td><td class="hi"><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">Real closed rents near your street, last 90 days</span><span class="zh">您街区 90 天内真实成交租金</span></td></tr>
+          <tr><td><span class="en">Who shows the home</span><span class="zh">谁带看</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">You, on your evenings</span><span class="zh">您自己，牺牲晚上时间</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">A rotating assistant</span><span class="zh">轮班的助理</span></td><td class="hi"><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">Ryan, every showing</span><span class="zh">每场都是 Ryan 本人</span></td></tr>
+          <tr><td><span class="en">Tenant screening</span><span class="zh">租客审核</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">Gut feeling, legal risk</span><span class="zh">凭感觉，有法律风险</span></td><td><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">Standardised</span><span class="zh">标准化</span></td><td class="hi"><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">Standardised, in writing, explained to you</span><span class="zh">标准化 + 书面留档 + 向您逐项说明</span></td></tr>
+          <tr><td><span class="en">Reaching you</span><span class="zh">联系到负责人</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">n/a</span><span class="zh">不适用</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">Call centre, ticket number</span><span class="zh">客服中心、工单号</span></td><td class="hi"><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">My mobile. Reply within 24 hours</span><span class="zh">我的手机号，24 小时内回复</span></td></tr>
+          <tr><td><span class="en">Language</span><span class="zh">语言</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">Whatever you speak</span><span class="zh">看您会什么</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">English only, usually</span><span class="zh">通常只有英文</span></td><td class="hi"><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">English and 中文, end to end</span><span class="zh">中英双语，全程</span></td></tr>
+          <tr><td><span class="en">Cost to start</span><span class="zh">起步成本</span></td><td><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">Your own time</span><span class="zh">您自己的时间</span></td><td class="no"><span class="mk n" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></span><span class="en">Setup &amp; onboarding fees</span><span class="zh">开户及启动费</span></td><td class="hi"><span class="mk y" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></span><span class="en">No upfront fee. Free rental analysis first</span><span class="zh">前期不收费，先免费评估</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="plans">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="lbl"><span class="en">Two ways to work together</span><span class="zh">两种合作方式</span></p>
+      <h2 class="d2"><span class="en">Pick the one that fits <span class="hl">your</span> life.</span><span class="zh">选适合<span class="hl">您</span>生活的那一种。</span></h2>
+    </div>
+    <div class="grid">
+      <div class="g6 rv"><div class="card plan">
+        <h3><span class="en">Leasing only</span><span class="zh">只要出租</span></h3>
+        <p class="for"><span class="en">For owners happy to manage the home themselves once a good tenant is in.</span><span class="zh">适合找到好租客后，愿意自己管理房子的屋主。</span></p>
+        <ul>
+          <li><span class="en">Rent analysis from real closed leases</span><span class="zh">参考真实成交租约的租金评估</span></li>
+          <li><span class="en">Photos, listing copy, floor plan if available</span><span class="zh">摄影、房源文案、如有户型图</span></li>
+          <li><span class="en">Listed on Zillow and the major rental sites</span><span class="zh">发布至 Zillow 等主要租房平台</span></li>
+          <li><span class="en">All showings run by Ryan</span><span class="zh">所有带看由 Ryan 本人负责</span></li>
+          <li><span class="en">Full written tenant screening</span><span class="zh">完整书面租客审核</span></li>
+          <li><span class="en">California lease, signed and explained</span><span class="zh">加州规范租约，签署并讲解</span></li>
+          <li><span class="en">Dated move-in condition record</span><span class="zh">带日期的入住状况记录</span></li>
+          <li class="off"><span class="en">Ongoing rent and repair handling</span><span class="zh">长期收租与维修处理</span></li>
+        </ul>
+        <a class="btn line ar" href="#contact"><span class="en">Ask about leasing only</span><span class="zh">咨询出租服务</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div></div>
+      <div class="g6 rv" style="position:relative;padding-top:14px">
+        <span class="tag"><span class="en">Most owners choose this</span><span class="zh">多数屋主选这个</span></span>
+        <div class="card plan pick">
+          <h3><span class="en">Leasing + management</span><span class="zh">出租 + 管理</span></h3>
+          <p class="for"><span class="en">For owners who travel, live abroad, or never want a 10 p.m. plumbing call.</span><span class="zh">适合经常出差、住在海外，或不想半夜接到水管电话的屋主。</span></p>
+          <ul>
+            <li><span class="en">Everything in leasing only</span><span class="zh">包含「只要出租」的全部内容</span></li>
+            <li><span class="en">Rent collection follow-up and reminders</span><span class="zh">租金跟催与提醒</span></li>
+            <li><span class="en">Repair requests triaged and coordinated</span><span class="zh">维修请求分级处理与协调</span></li>
+            <li><span class="en">You approve any spend above your limit</span><span class="zh">超过您设定金额的支出需您批准</span></li>
+            <li><span class="en">Tenant communication in both languages</span><span class="zh">中英双语与租客沟通</span></li>
+            <li><span class="en">Lease renewal and rent review each year</span><span class="zh">每年续约与租金检视</span></li>
+            <li><span class="en">Move-out walkthrough and deposit handling</span><span class="zh">退租验房与押金处理</span></li>
+          </ul>
+          <a class="btn pri ar" href="#contact"><span class="en">Ask about full management</span><span class="zh">咨询全程管理</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+    <p class="fine rv"><span class="en">Management fees are quoted per home, based on the property, the city, and the level of service — ask me and I'll quote your home directly. No upfront fee for the rental analysis.</span><span class="zh">管理费按每套房屋的情况、所在地区和服务内容单独报价 — 直接问我，我会针对您的房子报价。出租评估前期不收费。</span></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="lbl"><span class="en">A typical seven-day arc</span><span class="zh">典型的七天流程</span></p>
+      <h2 class="d2"><span class="en">What happens on <span class="hl">which day</span>.</span><span class="zh"><span class="hl">哪一天</span>会发生什么。</span></h2>
+      <p class="lede"><span class="en">This is how a straightforward home usually runs. A home that needs repairs or sits in a slow month takes longer — I'll tell you which one yours is after the walkthrough.</span><span class="zh">这是条件正常的房子通常的节奏。需要维修或赶上淡季的房子会更久 — 看过房之后我会直接告诉您属于哪一种。</span></p>
+    </div>
+    <ol class="tl rv">
+      <li><p class="day"><span class="en">Day 0</span><span class="zh">第 0 天</span></p><b><span class="en">Free rental analysis</span><span class="zh">免费出租评估</span></b><span><span class="en">You send the address. I send a rent range and a plan — within 24 hours.</span><span class="zh">您发来地址，我在 24 小时内回复租金区间和方案。</span></span></li>
+      <li><p class="day"><span class="en">Day 1</span><span class="zh">第 1 天</span></p><b><span class="en">Walkthrough &amp; prep list</span><span class="zh">现场看房与准备清单</span></b><span><span class="en">What to fix, what to skip, and what actually raises the rent.</span><span class="zh">哪些该修、哪些不用花钱、哪些真能提高租金。</span></span></li>
+      <li><p class="day"><span class="en">Day 2</span><span class="zh">第 2 天</span></p><b><span class="en">Photos &amp; go live</span><span class="zh">拍摄并上线</span></b><span><span class="en">Daylight photos, bilingual copy, live on Zillow and the major sites.</span><span class="zh">白天自然光拍摄、中英文案，上线 Zillow 等主要平台。</span></span></li>
+      <li><p class="day"><span class="en">Day 3–5</span><span class="zh">第 3–5 天</span></p><b><span class="en">Showings</span><span class="zh">带看</span></b><span><span class="en">Private and group showings, evenings and weekends, run by me.</span><span class="zh">单独与集中带看，晚间周末都安排，由我本人负责。</span></span></li>
+      <li><p class="day"><span class="en">Day 5–6</span><span class="zh">第 5–6 天</span></p><b><span class="en">Screening &amp; your decision</span><span class="zh">审核并由您决定</span></b><span><span class="en">Verified applications come to you with a written summary. You choose.</span><span class="zh">核实后的申请附书面摘要交给您，由您选择。</span></span></li>
+      <li><p class="day"><span class="en">Day 7</span><span class="zh">第 7 天</span></p><b><span class="en">Lease &amp; move-in</span><span class="zh">签约与入住</span></b><span><span class="en">Lease signed, deposit held properly, condition recorded with dated photos.</span><span class="zh">签署租约、押金依法保管、带日期照片记录房屋状况。</span></span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec band" id="results">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="lbl"><span class="en">Recently leased</span><span class="zh">近期成交</span></p>
+      <h2 class="d2"><span class="en">Seven homes. The number is the <span class="hl">days</span>.</span><span class="zh">七套房子，大字写的是<span class="hl">天数</span>。</span></h2>
+    </div>
+    <div class="cases rv" id="cases"></div>
+    <p class="fine rv"><span class="en">Addresses are withheld to protect owner privacy. These are specific past leases and are not a guarantee of future results; leasing time depends on the market, the price, and the condition of each home.</span><span class="zh">为保护屋主隐私，不显示具体地址。以上为过往具体成交案例，不代表未来结果保证；出租时间取决于市场、定价与房屋状况。</span></p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="lbl"><span class="en">In their words</span><span class="zh">客户评价</span></p>
+      <h2 class="d2"><span class="en">Owners and renters, <span class="hl">same person</span> on the phone.</span><span class="zh">屋主和租客，接电话的<span class="hl">都是同一个人</span>。</span></h2>
+    </div>
+    <div class="grid">
+      <div class="g3 rv"><div class="card quote"><span class="m" aria-hidden="true"></span><p><span class="en">Thank you Ryan for finding a tenant during the slow season. We followed your strategy and it leased quickly — much less vacancy.</span><span class="zh">感谢 Ryan 帮忙在淡季找租客，按照你的策略很快就租出去了，空置时间少了很多。</span></p><div class="who"><b>Alex</b><span><span class="en">Owner · San Jose</span><span class="zh">屋主 · San Jose 圣荷西</span></span></div></div></div>
+      <div class="g3 rv"><div class="card quote"><span class="m" aria-hidden="true"></span><p><span class="en">Thank you Ryan — we found a tenant in only two days. Incredible.</span><span class="zh">感谢 Ryan，很快就找到了租客，只用了 2 天时间，太厉害了。</span></p><div class="who"><b>Cici</b><span><span class="en">Owner</span><span class="zh">屋主</span></span></div></div></div>
+      <div class="g3 rv"><div class="card quote"><span class="m" aria-hidden="true"></span><p><span class="en">Thank you Ryan for helping me find a home. In the Bay Area it's so easy to get an application rejected — finding a place isn't easy.</span><span class="zh">感谢 Ryan 帮忙找房，在湾区这种申请很容易被拒的情况下，找到房子真的不容易。</span></p><div class="who"><b>Linda</b><span><span class="en">Renter · San Jose</span><span class="zh">租客 · San Jose 圣荷西</span></span></div></div></div>
+      <div class="g3 rv"><div class="card quote"><span class="m" aria-hidden="true"></span><p><span class="en">Thank you Ryan for finding me a place — my summer internship is sorted.</span><span class="zh">感谢 Ryan 找房，暑假实习的住处落实了。</span></p><div class="who"><b>Lisa</b><span><span class="en">Renter</span><span class="zh">租客</span></span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band">
+  <div class="wrap">
+    <div class="meet rv">
+      <figure><img src="img/patio.jpg" alt="A Bay Area home exterior at dusk" width="1536" height="1024" loading="lazy" onerror="this.remove()"></figure>
+      <div>
+        <p class="lbl"><span class="en">Meet Ryan</span><span class="zh">关于 Ryan</span></p>
+        <h2 class="d2" style="margin-top:18px"><span class="en">One person. <span class="hl">Your home.</span></span><span class="zh">一个人，<span class="hl">负责您的房子。</span></span></h2>
+        <p><span class="en">I'm Ryan Yan, and RY Homes is me — not a call centre. I work with owners and renters across San Jose, Santa Clara, Fremont, the Tri-Valley and the Peninsula. I price your home from leases that actually closed, run every showing myself, screen every applicant the same documented way, and explain the lease to the tenant in the language they are comfortable in. If you want one person who knows your home and picks up the phone, that's the whole idea.</span><span class="zh">我是 Ryan Yan（言）。RY Homes 就是我本人，不是客服中心。我服务 San Jose、Santa Clara、Fremont、Tri-Valley 和半岛一带的屋主与租客：用真实成交租约为您定价，所有带看亲自到场，每位申请人用同一套有记录的标准审核，并用租客听得懂的语言逐条讲清租约。想找一个真正了解您房子、又接得到电话的人，这就是 RY Homes 的全部。</span></p>
+        <div class="sig">
+          <span><span class="en">Leasing &amp; property management</span><span class="zh">出租与物业管理</span></span>
+          <span><span class="en">English &amp; 中文</span><span class="zh">中英双语</span></span>
+          <span><span class="en">South Bay · Peninsula · Tri-Valley</span><span class="zh">南湾 · 半岛 · Tri-Valley</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="grid">
+      <div class="g6 rv"><div class="card panel">
+        <p class="lbl"><span class="en">Fees</span><span class="zh">收费</span></p>
+        <h3><span class="en">Quoted per home, not off a price list.</span><span class="zh">按每套房子报价，不照价目表。</span></h3>
+        <p><span class="en">A 2-bedroom condo in Santa Clara and a 5-bedroom house in Los Gatos are not the same job. Tell me about the property and the service you want, and I'll quote your home directly — in writing, before you commit to anything.</span><span class="zh">Santa Clara 的两房公寓和 Los Gatos 的五房独立屋，工作量完全不同。告诉我房屋情况和需要的服务，我会直接针对您的房子书面报价 — 在您做任何承诺之前。</span></p>
+        <div class="mini">
+          <div><b class="en">Free</b><b class="zh">免费</b><span><span class="en">Rental analysis and rent range</span><span class="zh">出租评估与租金区间</span></span></div>
+          <div><b>$0</b><span><span class="en">Upfront fee to get started</span><span class="zh">启动前期费用</span></span></div>
+          <div><b>24h</b><span><span class="en">To get a reply from me</span><span class="zh">收到我的回复</span></span></div>
+        </div>
+        <div class="foot"><a class="btn line ar" href="#contact"><span class="en">Get a quote for my home</span><span class="zh">获取我的房子报价</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
+      </div></div>
+      <div class="g6 rv"><div class="card panel">
+        <p class="lbl"><span class="en">Service area</span><span class="zh">服务区域</span></p>
+        <h3><span class="en">Where I work.</span><span class="zh">我的服务范围。</span></h3>
+        <p><span class="en">Mostly the South Bay and Peninsula, plus the Tri-Valley. If your home is just outside this list, call anyway — if I'm not the right fit I'll say so.</span><span class="zh">主要在南湾、半岛和 Tri-Valley 一带。如果您的房子稍微在范围外，也欢迎联系 — 如果我不合适，我会直接说。</span></p>
+        <div class="chips">
+          <span>San Jose</span><span>Santa Clara</span><span>Sunnyvale</span><span>Cupertino</span><span>Milpitas</span><span>Fremont</span><span>Mountain View</span><span>Palo Alto</span><span>Dublin</span><span>Pleasanton</span><span>Los Gatos</span><span>Campbell</span><span class="more"><span class="en">+ nearby</span><span class="zh">+ 周边</span></span>
+        </div>
+        <figure style="margin:22px 0 0;border-radius:var(--r-sm);overflow:hidden;aspect-ratio:16/7;background:var(--s2)">
+          <img src="img/street.jpg" alt="" width="1536" height="1024" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.remove()">
+        </figure>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band">
+  <div class="wrap">
+    <div class="hd rv">
+      <p class="lbl"><span class="en">Questions owners ask</span><span class="zh">屋主常问</span></p>
+      <h2 class="d2"><span class="en">Straight answers.</span><span class="zh">直接回答。</span></h2>
+    </div>
+    <div class="faq rv">
+      <details><summary><span class="en">How long will it take to rent my home?</span><span class="zh">我的房子多久能租出去？</span></summary><p class="ans"><span class="en">It depends on the market, the price, and the condition of the home. My featured homes leased in 7 days on average, and the fastest on record was 2 days — but I won't promise you a number before I've seen your property and the comparable leases near it.</span><span class="zh">取决于市场、定价和房屋状况。我的精选案例平均 7 天租出，最快纪录是 2 天 — 但在看过您的房子和附近成交租约之前，我不会给您一个承诺数字。</span></p></details>
+      <details><summary><span class="en">What does it cost, and when do I pay?</span><span class="zh">收费多少？什么时候付？</span></summary><p class="ans"><span class="en">The rental analysis is free and there is no upfront fee. Leasing and management fees are quoted per home based on the property, the city and the service level, in writing, before you sign anything.</span><span class="zh">出租评估免费，前期不收费。出租与管理费用会根据房屋、地区和服务内容单独书面报价，在您签署任何文件之前告知。</span></p></details>
+      <details><summary><span class="en">How do you screen tenants?</span><span class="zh">您怎么审核租客？</span></summary><p class="ans"><span class="en">Credit report, income and employment verification, rental history, and a prior-eviction check — the same written standard applied to every applicant, as Fair Housing law requires. You see a written summary of each verified application and you make the final choice.</span><span class="zh">信用报告、收入与在职核实、租房历史、驱逐记录查询 — 所有申请人适用同一套书面标准，符合公平住房法要求。每份核实后的申请都会附书面摘要给您，最终由您决定。</span></p></details>
+      <details><summary><span class="en">Do I have to repaint or renovate first?</span><span class="zh">出租前一定要重新粉刷或装修吗？</span></summary><p class="ans"><span class="en">Usually not. After the walkthrough I'll give you a short list split into two: what genuinely raises the rent or speeds up the lease, and what is a waste of money. Clean, working, and well-lit beats newly renovated more often than owners expect.</span><span class="zh">通常不需要。看房之后我会给您一份清单，分成两类：真正能提高租金或加快出租的，以及纯属浪费钱的。干净、设备正常、采光好，往往比重新装修更有效。</span></p></details>
+      <details><summary><span class="en">I live overseas. Can this still work?</span><span class="zh">我住在海外，可以合作吗？</span></summary><p class="ans"><span class="en">Yes — a good share of my owners are not in California. On the management plan I handle showings, screening, lease signing, move-in, rent follow-up and repair coordination, and you approve any spend above the limit you set. Updates come by WeChat, text or email, whichever you prefer.</span><span class="zh">可以 — 我的屋主里有不少不在加州。管理方案下，带看、审核、签约、入住、租金跟催和维修协调都由我处理，超过您设定金额的支出需您批准。进度可以用微信、短信或邮件汇报，看您方便。</span></p></details>
+      <details><summary><span class="en">What if the tenant stops paying or damages the home?</span><span class="zh">如果租客不付租金或损坏房屋怎么办？</span></summary><p class="ans"><span class="en">This is exactly why screening and the move-in condition record matter. If rent is late I follow up immediately and keep a written record from day one. For damage, the dated move-in photos are what make a deposit claim stand up. Nobody can promise a perfect tenant — what I can promise is that the paperwork is in place before anything goes wrong.</span><span class="zh">这正是审核和入住状况记录的意义。租金逾期我会立即跟催，并从第一天就留书面记录。房屋损坏方面，带日期的入住照片是押金主张能否成立的关键。没有人能保证租客百分百完美 — 我能保证的是，出事之前文件就已经齐全。</span></p></details>
+      <details><summary><span class="en">Can I end the agreement if I'm not happy?</span><span class="zh">如果不满意，可以终止合作吗？</span></summary><p class="ans"><span class="en">Yes. The management agreement can be ended with 30 days' written notice and a signed termination and release. I'd rather you stay because the service is good than because you're locked in.</span><span class="zh">可以。管理协议提前 30 天书面通知，并签署解约及免责文件即可终止。我希望您留下来是因为服务好，不是因为被合约绑住。</span></p></details>
+      <details><summary><span class="en">Do you work with renters too? Isn't that a conflict?</span><span class="zh">您也帮租客找房，这样不会有利益冲突吗？</span></summary><p class="ans"><span class="en">I do, and it's an advantage rather than a conflict: I know what qualified renters in this market are actually willing to pay and how fast they move. Each side is told clearly who I represent in that specific transaction before anything is signed.</span><span class="zh">是的，我也帮租客找房。这其实是优势而非冲突：我清楚这个市场上合格租客实际愿意付多少、决定得多快。在签署任何文件之前，我都会明确告知每一方我在该笔交易中代表谁。</span></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec t0">
+  <div class="wrap">
+    <a class="card switch rv" href="renters/index.html" data-keep-lang>
+      <span class="t">
+        <b><span class="en">Looking for a home to rent instead?</span><span class="zh">其实您是想租房？</span></b>
+        <span><span class="en">Income requirements, the application checklist, and help getting approved — on the renters page.</span><span class="zh">收入要求、申请材料清单、提高通过率的方法 — 都在租客页面。</span></span>
+      </span>
+      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="sec t0" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="side rv">
+        <p class="lbl on"><span class="en">Free rental analysis</span><span class="zh">免费出租评估</span></p>
+        <h2 class="d2"><span class="en">Tell me about your home.</span><span class="zh">说说您的房子。</span></h2>
+        <p class="lede"><span class="en">Fill this in and I'll come back within 24 hours with a rent range from real closed leases near you, and what I'd do to lease it.</span><span class="zh">填写表单，我会在 24 小时内回复：基于您附近真实成交租约的租金区间，以及我会怎么把它租出去。</span></p>
+        <ul class="promise">
+          <li><span class="en">A reply within 24 hours, from me</span><span class="zh">24 小时内由我本人回复</span></li>
+          <li><span class="en">No upfront fee, no obligation</span><span class="zh">前期不收费，无需任何承诺</span></li>
+          <li><span class="en">Your address stays private</span><span class="zh">您的地址严格保密</span></li>
+          <li><span class="en">English or 中文 — your choice</span><span class="zh">中文或英文，由您选择</span></li>
+        </ul>
+        <div class="vcard">
+          <p class="nm"><span class="en">What happens next</span><span class="zh">接下来会发生什么</span></p>
+          <ol class="nxt">
+            <li><b>1</b><span><span class="en">You send this form — three minutes.</span><span class="zh">您提交这份表单，三分钟。</span></span></li>
+            <li><b>2</b><span><span class="en">I reply within 24 hours with a rent range from real closed leases, and a plan.</span><span class="zh">我在 24 小时内回复：基于真实成交租约的租金区间和出租方案。</span></span></li>
+            <li><b>3</b><span><span class="en">We walk the home together and agree the prep list.</span><span class="zh">一起看房，确定准备清单。</span></span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="rv">
+        <form class="lead-form" id="lead-form" data-endpoint="https://script.google.com/macros/s/AKfycbyTH2sAKzTicwfRcLPa5SaTnr02I7jEpn47IRqpo52apYAmlZM-5yWqtVVWb7bxptcipw/exec" novalidate>
+          <input type="hidden" name="type" value="owner">
+          <input type="hidden" name="lang" value="en">
+          <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <p class="fs"><i>01</i><span class="en">Your contact information</span><span class="zh">您的联系方式</span></p><div class="fg"><div class="f"><label for="firstName"><span class="en">First name</span><span class="zh">名</span><i class="rq" aria-hidden="true">*</i></label><input id="firstName" name="firstName" type="text" required placeholder="e.g., Jenny" data-ph-en="e.g., Jenny" data-ph-zh="例如：Jenny" autocomplete="given-name"></div><div class="f"><label for="lastName"><span class="en">Last name</span><span class="zh">姓</span><i class="rq" aria-hidden="true">*</i></label><input id="lastName" name="lastName" type="text" required placeholder="e.g., Chen" data-ph-en="e.g., Chen" data-ph-zh="例如：Chen" autocomplete="family-name"></div><div class="f"><label for="email"><span class="en">Email</span><span class="zh">邮箱</span><i class="rq" aria-hidden="true">*</i></label><input id="email" name="email" type="email" required placeholder="name@example.com" data-ph-en="name@example.com" data-ph-zh="name@example.com" autocomplete="email"></div><div class="f"><label for="phone"><span class="en">Mobile phone</span><span class="zh">手机号码</span><i class="rq" aria-hidden="true">*</i></label><input id="phone" name="phone" type="tel" required placeholder="408-555-1234" data-ph-en="408-555-1234" data-ph-zh="408-555-1234" autocomplete="tel" pattern="^(\+1[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$"><small class="fh"><span class="en">10-digit U.S. number. We may call or text.</span><span class="zh">美国 10 位号码，我们可能会来电或发短信。</span></small></div><fieldset class="f full"><legend><span class="en">Preferred contact method (select all that apply)</span><span class="zh">偏好的联系方式（可多选）</span></legend><div class="chipset"><label class="chip"><input type="checkbox" name="contactMethod" value="Phone call"><span><span class="en">Phone call</span><span class="zh">电话</span></span></label><label class="chip"><input type="checkbox" name="contactMethod" value="Text message"><span><span class="en">Text message</span><span class="zh">短信</span></span></label><label class="chip"><input type="checkbox" name="contactMethod" value="Email"><span><span class="en">Email</span><span class="zh">邮件</span></span></label><label class="chip"><input type="checkbox" name="contactMethod" value="WeChat"><span><span class="en">WeChat</span><span class="zh">微信</span></span></label></div></fieldset><div class="f"><label for="wechat"><span class="en">WeChat ID (optional)</span><span class="zh">微信号（选填）</span></label><input id="wechat" name="wechat" type="text" ></div><div class="f"><label for="bestTime"><span class="en">Best time to reach you</span><span class="zh">方便联系的时间</span></label><select id="bestTime" name="bestTime"><option value="" data-en="Select…" data-zh="请选择…">Select…</option><option value="Morning (9 AM–12 PM)" data-en="Morning (9 AM–12 PM)" data-zh="上午（9 点–12 点）">Morning (9 AM–12 PM)</option><option value="Afternoon (12–5 PM)" data-en="Afternoon (12–5 PM)" data-zh="下午（12 点–5 点）">Afternoon (12–5 PM)</option><option value="Evening (5–8 PM)" data-en="Evening (5–8 PM)" data-zh="晚上（5 点–8 点）">Evening (5–8 PM)</option><option value="Anytime" data-en="Anytime" data-zh="任何时间">Anytime</option></select></div></div><p class="fs"><i>02</i><span class="en">About your property</span><span class="zh">房屋信息</span></p><div class="fg"><div class="f full"><label for="street"><span class="en">Street address</span><span class="zh">街道地址</span><i class="rq" aria-hidden="true">*</i></label><input id="street" name="street" type="text" required placeholder="1234 Main St, Unit 5" data-ph-en="1234 Main St, Unit 5" data-ph-zh="例如：1234 Main St, Unit 5" autocomplete="street-address"><small class="fh"><span class="en">Include unit number if any. Your address stays private.</span><span class="zh">如有单元号请一并填写，地址严格保密。</span></small></div><div class="f"><label for="city"><span class="en">City, State</span><span class="zh">城市，州</span><i class="rq" aria-hidden="true">*</i></label><input id="city" name="city" type="text" required placeholder="San Jose, CA" data-ph-en="San Jose, CA" data-ph-zh="例如：San Jose, CA" autocomplete="address-level2"></div><div class="f"><label for="zip"><span class="en">ZIP code</span><span class="zh">邮编</span><i class="rq" aria-hidden="true">*</i></label><input id="zip" name="zip" type="text" required placeholder="95123" data-ph-en="95123" data-ph-zh="例如：95123" inputmode="numeric" pattern="^\d{5}$" maxlength="5" autocomplete="postal-code"></div><div class="f full"><label for="propertyType"><span class="en">Property type</span><span class="zh">房屋类型</span><i class="rq" aria-hidden="true">*</i></label><select id="propertyType" name="propertyType" required><option value="" data-en="Select…" data-zh="请选择…">Select…</option><option value="Single-Family Home" data-en="Single-family home (detached house)" data-zh="独立屋">Single-family home (detached house)</option><option value="Townhouse" data-en="Townhouse (shared walls)" data-zh="联排别墅">Townhouse (shared walls)</option><option value="Condominium" data-en="Condo (unit in a building)" data-zh="公寓">Condo (unit in a building)</option><option value="Duplex / Multi-Unit" data-en="Duplex / multi-unit (2–4 units)" data-zh="双拼 / 多单元（2–4 户）">Duplex / multi-unit (2–4 units)</option><option value="ADU / In-Law Unit" data-en="ADU / in-law unit" data-zh="ADU / 附属单元">ADU / in-law unit</option><option value="Other" data-en="Other" data-zh="其他">Other</option></select></div><div class="f"><label for="beds"><span class="en">Bedrooms</span><span class="zh">卧室数量</span><i class="rq" aria-hidden="true">*</i></label><select id="beds" name="beds" required><option value="" data-en="Select…" data-zh="请选择…">Select…</option><option value="Studio" data-en="Studio" data-zh="开间">Studio</option><option value="1" data-en="1" data-zh="1">1</option><option value="2" data-en="2" data-zh="2">2</option><option value="3" data-en="3" data-zh="3">3</option><option value="4" data-en="4" data-zh="4">4</option><option value="5" data-en="5" data-zh="5">5</option><option value="6+" data-en="6+" data-zh="6+">6+</option></select></div><div class="f"><label for="baths"><span class="en">Bathrooms</span><span class="zh">卫生间数量</span><i class="rq" aria-hidden="true">*</i></label><select id="baths" name="baths" required><option value="" data-en="Select…" data-zh="请选择…">Select…</option><option value="1" data-en="1" data-zh="1">1</option><option value="1.5" data-en="1.5" data-zh="1.5">1.5</option><option value="2" data-en="2" data-zh="2">2</option><option value="2.5" data-en="2.5" data-zh="2.5">2.5</option><option value="3" data-en="3" data-zh="3">3</option><option value="3.5" data-en="3.5" data-zh="3.5">3.5</option><option value="4+" data-en="4+" data-zh="4+">4+</option></select><small class="fh"><span class="en">A half bath (.5) has a toilet and sink, no shower.</span><span class="zh">半卫（.5）指只有马桶和洗手台，没有淋浴。</span></small></div><div class="f"><label for="sqft"><span class="en">Living area, sq ft (optional)</span><span class="zh">室内面积，平方英尺（选填）</span></label><input id="sqft" name="sqft" type="number" placeholder="e.g., 1,800" data-ph-en="e.g., 1,800" data-ph-zh="例如：1800" min="100" step="1"></div><div class="f"><label for="furnishing"><span class="en">Furnishing</span><span class="zh">家具情况</span></label><select id="furnishing" name="furnishing"><option value="" data-en="Select…" data-zh="请选择…">Select…</option><option value="Unfurnished" data-en="Unfurnished" data-zh="不带家具">Unfurnished</option><option value="Furnished" data-en="Furnished" data-zh="带家具">Furnished</option><option value="Partially furnished" data-en="Partially furnished" data-zh="部分家具">Partially furnished</option></select></div><div class="f full"><label for="available"><span class="en">When will it be available?</span><span class="zh">什么时候可以出租？</span><i class="rq" aria-hidden="true">*</i></label><select id="available" name="available" required><option value="" data-en="Select…" data-zh="请选择…">Select…</option><option value="Available now" data-en="Available now (vacant, ready to show)" data-zh="现在就可以（空置，可随时看房）">Available now (vacant, ready to show)</option><option value="Within 30 days" data-en="Within 30 days" data-zh="30 天内">Within 30 days</option><option value="In 1–3 months" data-en="In 1–3 months" data-zh="1–3 个月内">In 1–3 months</option><option value="3+ months / exploring" data-en="3+ months, or just exploring" data-zh="3 个月以上，或先了解一下">3+ months, or just exploring</option></select></div></div><fieldset class="f full"><legend><span class="en">Which service are you interested in?</span><span class="zh">您想了解哪种服务？</span><i class="rq" aria-hidden="true">*</i></legend><div class="rset"><label class="rcard"><input type="radio" name="service" value="Leasing Only" required><span><b><span class="en">Leasing only</span><span class="zh">只要出租</span></b><small><span class="en">We market the home and find a qualified tenant. You manage after move-in.</span><span class="zh">我们负责推广并找到合格租客，入住后由您自己管理。</span></small></span></label><label class="rcard"><input type="radio" name="service" value="Leasing + Property Management" required><span><b><span class="en">Leasing + management</span><span class="zh">出租 + 管理</span></b><small><span class="en">We lease the home, plus rent reminders and repair coordination.</span><span class="zh">我们负责出租，并提供收租提醒和维修协调。</span></small></span></label><label class="rcard"><input type="radio" name="service" value="Not sure yet" required><span><b><span class="en">Not sure yet</span><span class="zh">还不确定</span></b><small><span class="en">I'd like a free consultation first.</span><span class="zh">想先免费咨询一下。</span></small></span></label></div></fieldset><div class="f full"><label for="notes"><span class="en">Anything else we should know?</span><span class="zh">还有其他想告诉我们的吗？</span></label><textarea id="notes" name="notes" rows="3" placeholder="Recent upgrades, parking, pet policy, your target rent, questions…" data-ph-en="Recent upgrades, parking, pet policy, your target rent, questions…" data-ph-zh="例如：近期装修、车位、宠物政策、期望租金、其他问题……"></textarea></div>
+          <div class="fsub">
+            <p class="ferr" id="lf-err" hidden tabindex="-1"></p>
+            <button class="btn pri ar" type="submit" id="lf-btn"><span class="en">Get my free rental analysis</span><span class="zh">获取免费出租评估</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <p class="fnote"><span class="en">By submitting, you agree that Ryan Yan of RY Homes may contact you about your property by phone, text or email. Your information is not sold or shared.</span><span class="zh">提交即表示您同意 RY Homes 的 Ryan Yan 就您的房屋通过电话、短信或邮件与您联系。您的信息不会被出售或分享。</span></p>
+          </div>
+        </form>
+        <div class="okbox" id="lead-ok" hidden tabindex="-1">
+          <p class="sl" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg></p>
+          <h3><span class="en">Got it — thank you.</span><span class="zh">已收到，谢谢您。</span></h3>
+          <p><span class="en">Your request is with me. I'll reply within 24 hours with a rent range and a plan — by phone or email, whichever you chose above.</span><span class="zh">您的信息已经到我这里。我会在 24 小时内回复租金区间和出租方案 —— 用您在上面选择的方式联系您。</span></p>
+          <a class="btn ink ar" href="#results" style="margin-top:6px"><span class="en">See recent results</span><span class="zh">查看近期成交</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="fb">RY Homes</p>
+    <p>Ryan Yan · <span class="en">Leasing &amp; property management, San Francisco Bay Area</span><span class="zh">湾区出租与物业管理</span></p>
+    <p class="flinks">
+      <a href="index.html" data-keep-lang><span class="en">For owners</span><span class="zh">屋主服务</span></a>
+      <a href="renters/index.html" data-keep-lang><span class="en">For renters</span><span class="zh">租客找房</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="zh">联系</span></a>
+    </p>
+    <p class="eho"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg><span class="en">Equal Housing Opportunity</span><span class="zh">公平住房机会</span></p>
+    <p><span class="en">Serving San Jose, Santa Clara, Sunnyvale, Cupertino, Milpitas, Fremont, Mountain View, Palo Alto, Dublin, Pleasanton, Los Gatos, Campbell and nearby. Leasing times shown reflect specific past results and are not a guarantee of future outcomes.</span><span class="zh">服务区域：San Jose、Santa Clara、Sunnyvale、Cupertino、Milpitas、Fremont、Mountain View、Palo Alto、Dublin、Pleasanton、Los Gatos、Campbell 及周边。页面所示出租时间为过往具体案例，不构成未来结果保证。</span></p>
+    <p>© <span id="yr">2026</span> RY Homes.</p>
+  </div>
+</footer>
+
+<div class="dock">
+  <a class="btn pri ar" href="#contact"><span class="en">Free rental analysis</span><span class="zh">免费出租评估</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+</div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script>
+const CASES=[
+ {img:"north-sj.jpg",en:"North San Jose",zh:"北圣荷西",ten:"Two-story home",tzh:"两层独立屋",rent:"$6,000+",d:3},
+ {img:"dublin.jpg",en:"Dublin",zh:"Dublin 都柏林",ten:"Single-family home",tzh:"独立屋",rent:"$5,500+",d:5},
+ {img:"palo-alto.jpg",en:"Palo Alto",zh:"Palo Alto 帕罗奥图",ten:"Townhome",tzh:"联排别墅",rent:"$4,500+",d:6},
+ {img:"berryessa.jpg",en:"Berryessa, San Jose",zh:"圣荷西 Berryessa",ten:"Single-story home",tzh:"单层独立屋",rent:"$5,500+",d:7},
+ {img:"almaden.jpg",en:"Almaden, San Jose",zh:"圣荷西 Almaden",ten:"Single-story home",tzh:"单层独立屋",rent:"$5,300+",d:7},
+ {img:"almaden-valley.jpg",en:"Almaden Valley, San Jose",zh:"圣荷西 Almaden Valley",ten:"Two-story home",tzh:"两层独立屋",rent:"$6,500+",d:10},
+ {img:"los-gatos.jpg",en:"Los Gatos Mountains",zh:"Los Gatos 山区",ten:"Two-story home",tzh:"两层独立屋",rent:"$5,000+",d:12}
+];
+(function(){
+  var box=document.getElementById("cases");if(!box)return;
+  CASES.forEach(function(c){
+    var el=document.createElement("article");el.className="case";
+    el.innerHTML='<figure><img src="cases/'+c.img+'" alt="A home in '+c.en+' recently leased in '+c.d+' days" loading="lazy" width="600" height="450" onerror="this.remove()"></figure>'+
+      '<div class="b"><p class="n"><b class="num">'+c.d+'</b><em><span class="en">'+(c.d===1?'day to lease':'days to lease')+'</span><span class="zh">天租出</span></em></p>'+
+      '<p class="city"><span class="en">'+c.en+'</span><span class="zh">'+c.zh+'</span></p>'+
+      '<p class="meta"><span class="en">'+c.ten+'</span><span class="zh">'+c.tzh+'</span></p>'+
+      '<p class="rent">'+c.rent+'<span class="en">/mo</span><span class="zh">/月</span></p></div>';
+    box.appendChild(el);
+  });
+  var s=document.createElement("article");s.className="case sum";
+  s.innerHTML='<p class="n"><b class="num">7</b><em><span class="en">days on average</span><span class="zh">天平均</span></em></p>'+
+    '<p><span class="en">across these seven featured homes.</span><span class="zh">以上七套精选案例的平均出租时间。</span></p>';
+  box.appendChild(s);
+  var y=document.getElementById("yr");if(y)y.textContent=new Date().getFullYear();
+})();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
